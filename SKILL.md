@@ -84,6 +84,9 @@ Is this a task (build/fix/change something)?
 The output of CPS Phase 5 (Rumelt's strategy kernel) becomes the input for SDD Phase 1 (Spec).
 
 For full CPS methodology, see the `complex-problem-solving` skill.
+For creative iteration (when you have a rough idea and need to feel your way to clarity), see the `taste-loop` skill.
+
+**The natural flow:** CPS defines the problem → Taste Loop discovers the solution shape → SDD builds it.
 
 ## Anti-Patterns
 
