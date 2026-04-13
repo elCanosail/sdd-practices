@@ -67,13 +67,23 @@ Run the verification checkpoints from Phase 2. Loop until all pass.
 ## Decision Tree
 
 ```
-Is the task trivial (typo, one-liner)?
-  YES → Just do it. Skip phases.
-  NO →
-    Is the spec clear with measurable acceptance criteria?
-      YES → Phase 2 (Plan)
-      NO → Phase 1 (Spec) — ask questions, don't assume
+Is this a task (build/fix/change something)?
+  NO — it's a problem (something is wrong, unclear, or strategic)
+    → Use CPS skill first (complex-problem-solving)
+    → Return here once the solution is defined
+  YES →
+    Is the task trivial (typo, one-liner)?
+      YES → Just do it. Skip phases.
+      NO →
+        Is the spec clear with measurable acceptance criteria?
+          YES → Phase 2 (Plan)
+          NO → Phase 1 (Spec) — ask questions, don't assume
 ```
+
+**CPS → SDD handoff:** CPS Phases 0-5 define *what* to build and *why*. SDD Phases 1-4 define *how* to build it.
+The output of CPS Phase 5 (Rumelt's strategy kernel) becomes the input for SDD Phase 1 (Spec).
+
+For full CPS methodology, see the `complex-problem-solving` skill.
 
 ## Anti-Patterns
 
