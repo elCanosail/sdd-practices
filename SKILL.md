@@ -97,6 +97,21 @@ Is the task trivial (typo, one-liner)?
 
 For detailed expert profiles and question templates, see [references/expert-checklists.md](references/expert-checklists.md).
 
+## Git Integration
+
+Each SDD phase maps to a Git action:
+
+| SDD Phase | Git Action |
+|---|---|
+| Phase 1: Spec | Create branch `feat/feature-name` |
+| Phase 2: Plan | Commit spec doc: `docs(feature): spec for X` |
+| Phase 3: Implement | Atomic commits per logical step |
+| Phase 4: Verify | Tests pass → PR → merge → delete branch |
+
+**Commit format:** `type(scope): description` (Conventional Commits)
+
+For full Git workflow, branching strategy, PR templates, and anti-patterns, see [references/git-practices.md](references/git-practices.md).
+
 ## Integration with AGENTS.md
 
 This skill reinforces the Coding Principles section in AGENTS.md. When both are loaded:
